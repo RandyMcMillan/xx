@@ -1,4 +1,9 @@
+use gnostr_bins::get_weeble;
+use gnostr_bins::get_blockheight;
+use gnostr_bins::get_wobble;
 fn main() {
+
+println!("{:}/{:}/{:}",gnostr_bins::get_weeble().unwrap(),gnostr_bins::get_blockheight().unwrap(),gnostr_bins::get_wobble().unwrap());
     //let version = xx::git::get_git_version();
     //println!("{}", version.unwrap());
     let git = xx::git::Git::new(".".into());
