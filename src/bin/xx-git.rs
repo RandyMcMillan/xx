@@ -10,10 +10,10 @@ fn main() {
             format!("{}", git.get_remote_url().unwrap().to_string())
         );
         println!("{:}", format!("{}", git.current_sha().unwrap().to_string()));
-        println!(
-            "{:}",
-            format!("{}", git.current_sha_short().unwrap().to_string())
-        );
+        //println!(
+        //    "{:}",
+        //    format!("{}", git.current_sha_short().unwrap().to_string())
+        //);
         println!(
             "{:}",
             format!("{}", git.current_branch().unwrap().to_string())
