@@ -147,7 +147,7 @@ impl Git {
     }
 }
 
-fn get_git_version() -> Result<String> {
+pub fn get_git_version() -> Result<String> {
     let version = cmd!("git", "--version")
         .read()
         .map_err(|err| XXError::GitError(err, PathBuf::new()))?;
