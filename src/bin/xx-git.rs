@@ -5,5 +5,6 @@ fn main() {
 
     if git.is_repo() {
         println!("{}", git.is_repo());
+        println!("{:}", format!("{}",git.get_remote_url().unwrap().to_string()));
     }
 }
