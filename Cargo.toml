@@ -19,6 +19,8 @@ filetime = "0.2"
 duct = "0.13"
 gnostr-bins = "0.0.16"
 gnostr_bins = { version = "0.0.16", package = "gnostr-bins" }
+git2 = "0.17"
+gpgme = { version = "0.11.0", features = ["v1_13"] }
 
 [dev-dependencies]
 once_cell = "1"
